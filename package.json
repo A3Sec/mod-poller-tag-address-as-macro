@@ -2,10 +2,10 @@
   "name": "poller-tag-address-as-macro",
   "types": ["module"],
   "version": "1.4",
-  "homepage": "http://github.com/shinken-monitoring/poller-tag-address-as-macro",
+  "homepage": "https://github.com/A3Sec/mod-poller-tag-address-as-macro",
   "author": "David Gil",
   "description": "Store poller address into a host macro",
-  "repository": "https://github.com/shinken-monitoring/poller-tag-address-as-macro",
+  "repository": "https://github.com/A3Sec/mod-poller-tag-address-as-macro",
   "keywords": [
     "module",
     "arbiter",
