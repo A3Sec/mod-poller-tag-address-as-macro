@@ -77,15 +77,8 @@ class PollerTagAddress(BaseModule):
                             poller_conf.poller_tags))
 
         for h in arb.conf.hosts:
-
-            set_poller_macro = (
-                h.poller_tag != "None" and
-                self.host_macro_name and
-                self.host_macro_name.upper() not in h.customs
-            )
-
-            if set_poller_macro:
+            if h.poller_tag != "None":
                 for poller_conf in arb.conf.pollers:
                     for tag in poller_conf.poller_tags:
-                        if h.poller_tag != "None" and h.poller_tag == tag:
+                        if h.poller_tag == tag:
                             self.__set_poller_address_macro(h, poller_conf)
